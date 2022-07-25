@@ -1,0 +1,26 @@
+footer {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #000;
+  color: #fff;
+  font-family: var(--fonte1);
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+footer .logoImg {
+  width: 170px;
+}
+
+@media (max-width: 700px) {
+  footer .logoImg {
+    width: 120px;
+  }
+  footer {
+    font-size: 0.6em;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="form">
+    <h3>Registrar Imovel</h3>
+    <form onsubmit="App.registrar()">
+      <div class="radios">
+        <label for="imovelTypeApt">Apartamento</label>
+        <input type="radio" name="imovelType" id="imovelTypeApt" value="Apartamento" required>
+        <label for="imovelTypeHse">Casa</label>
+        <input type="radio" name="imovelType" id="imovelTypeHse" value="Casa" required>
+      </div>
+      <div class="area">
+        <label for="areaInput">Area do imovel:</label>
+        <input type="number" name="areaInput" id="areaInput" min="1" required>
+      </div>
+      <div class="alugar">
+        <label for="alugar">Alugar:</label>
+        <input type="checkbox" name="alugar" id="alugar">
+      </div>
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+</body>
+
+<section class="lists">
+</section>
+
+</html>

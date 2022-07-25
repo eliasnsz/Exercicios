@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="mainContainer">
+    <div class="formContainer">
+      <h3>Insira os dados da casa:</h3>
+      <input placeholder="Bairro" type="text" name="district" id="district">
+      <input placeholder="Cidade" type="text" name="city" id="city">
+      <input placeholder="Numero da casa" type="number" name="houseNumber" id="houseNumber">
+      <input placeholder="Area da casa" type="number" name="houseArea" id="houseArea">
+      <button onclick="send()">Adicionar</button>
+    </div>
+    <div class="tableContainer">
+      <table id="housesTable">
+        <tr>
+          <th>Bairro</th>
+          <th>Cidade</th>
+          <th>Numero</th>
+          <th>Area</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

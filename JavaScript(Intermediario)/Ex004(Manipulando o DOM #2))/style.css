@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  margin: 10px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form div {
+  margin: 10px 0px;
+}
+
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.lists * {
+  height: 25%;
+}
+
+.listDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.alugado {
+  background-color: rgb(226, 58, 58);
+}
+
+.livre {
+  background-color: rgba(58, 155, 33, 0.753);
+}

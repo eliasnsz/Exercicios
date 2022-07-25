@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat';
+}
+
+.mainContainer {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  font-family: montserrat;
+  background-color: #191919;
+  min-width: 500px;
+}
+
+.formContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: black;
+  border-radius: 20px;
+}
+
+input {
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 5px;
+  margin: 15px 0px 0px 0px;
+  border: solid 1px lightgray;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+.formContainer button {
+  margin-top: 20px;
+  padding: 15px;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  background-color: rgb(211, 52, 65);
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  border-radius: 5px;
+}
+.formContainer button:hover {
+  background-color: rgb(108, 131, 89);
+  cursor: pointer;
+}
+
+
+.tableContainer {
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1em;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  padding: 5px;
+  border: 1px solid white;
+}
+td {
+  text-align: right;
+}
+
+tr:nth-child(2n) {
+  background-color: #232323;
+}
+
+.listRemoveButton {
+  width: 1px;
+  border: none;
+}
+
+.listRemoveButton button {
+  color: white;
+  border: 1px solid #fff;
+  background-color: #191919;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 0.9em;
+}
+.listRemoveButton button:hover {
+  background-color: rgb(211, 52, 65);
+  cursor: pointer;
+}
+
+#housesTable {
+  visibility: hidden;
+}
