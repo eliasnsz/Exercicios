@@ -1,12 +1,17 @@
 import './App.css';
-import HelloWorld from './components/helloWorld';
-import Lorem from './components/lorem';
+import './components/planets/style.css'
+import Planet from './components/planets/planet';
+
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld/>
-      <Lorem/>
+      <Planet/>
+      <Planet/>
+      <Planet/>
+      <Planet/>
+      <Planet/>
+      <Planet/>
     </div>
   );
 }
