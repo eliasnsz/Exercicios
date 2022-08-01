@@ -1,17 +1,11 @@
 import './App.css';
-import './components/planets/style.css'
-import Planet from './components/planets/planet';
+import Planets from './components/planets/'
 
 
 function App() {
   return (
     <div className="App">
-      <Planet/>
-      <Planet/>
-      <Planet/>
-      <Planet/>
-      <Planet/>
-      <Planet/>
+      <Planets/>
     </div>
   );
 }
