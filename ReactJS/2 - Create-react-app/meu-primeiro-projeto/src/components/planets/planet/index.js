@@ -5,13 +5,23 @@ const clickEvent = (planetName) => {
 }
 
 const Planet = (props) => {
-  return (
-    <div onClick={() => clickEvent(props.planetName)} >
-      <h4>{props.planetName}</h4>
-      <p>{props.description}</p>
-      <PlanetImg imageUrl={props.imageUrl}/>  
-    </div>
-  )
+  if (props.planetName) {
+    return (
+      <div onClick={() => clickEvent(props.planetName)} >
+        <h4>{props.planetName}</h4>
+        <p>{props.description}</p>
+        <PlanetImg imageUrl={props.imageUrl}/>  
+      </div>
+    )
+  } else {
+    return (
+      <div onClick={() => clickEvent(props.planetName)} >
+        <h4>Nome desconhecido</h4>
+        <p>{props.description}</p>
+        <PlanetImg imageUrl={props.imageUrl}/>  
+      </div>
+    )
+  }
 }
 
 export default Planet

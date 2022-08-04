@@ -1,9 +1,18 @@
 import Planet from './planet'
 
+const names = ["Elias", "Joao", "Pedro", "Jose", "Felipe"]
+
+const NamesList = names.map((name, i) => 
+  <li key={i}>Satelite: {name}</li>
+)
+
 const Planets = () => {
   return (
     <div>
       <h3>Planet List</h3> 
+      <ul>
+        {NamesList}  
+      </ul>
       <Planet planetName="Mercurio" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit." imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/280px-Mercury_in_color_-_Prockter07-edit1.jpg"/>
       <Planet planetName="Venus" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit." imageUrl="https://static.natgeo.pt/files/styles/image_3200/public/pia00271_detail.jpg?w=710&h=710"/>
       <Planet planetName="Terra" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit." imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/300px-The_Blue_Marble_%28remastered%29.jpg"/>
